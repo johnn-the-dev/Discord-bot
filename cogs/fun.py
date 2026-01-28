@@ -1,7 +1,6 @@
 from discord.ext import commands
 import discord
 import random
-from economy import load_economy_json, save_economy
 import os
 import json
 
@@ -19,7 +18,6 @@ def load_economy_json():
 def save_economy(data):
     with open(ECONOMY_FILE, "w") as f:
         json.dump(data, f, indent=4)
-
 
 class Fun(commands.Cog):
     def __init__(self, bot) -> None:
