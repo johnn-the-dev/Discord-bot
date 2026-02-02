@@ -21,7 +21,7 @@ async def load_extensions():
 
 @bot.event
 async def on_ready():
-    print(f'🤖 Bot {bot.user} is online.')
+    print(f'{bot.user} is online.')
 
 async def main():
     async with bot:
